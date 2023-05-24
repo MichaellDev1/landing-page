@@ -9,33 +9,21 @@ export default function CardOneSection({
 }) {
   return (
     <div
-      className={`relative flex flex-col items-center justify-center text-center ${
-        isDorado ? "h-[131%] bottom-[71px] rounded-t-3xl" : "h-[100%]"
+      className={`relative flex flex-col items-center px-5 justify-center text-center ${
+        isDorado ? "h-[145%] bottom-[67px] rounded-t-[30px]" : "h-[100%]"
       } min-h-[200px]`}
       style={{
         background: `${isDorado && "linear-gradient(110deg,#F5CF70,#F5B118)"}`,
       }}
     >
       <span
-        className="relative flex items-center justify-center mb-5 w-[45px] border h-[45px] rounded-xl"
+        className="relative flex items-center justify-center mb-5 w-[50px] text-3xl text-white h-[50px] rounded-xl"
         style={{
-          background: `${
-            isDorado
-              ? "linear-gradient(#ebb85b,#F5AF2E)"
-              : "linear-gradient(#A779E5,#9865f5)"
-          }`,
+          background: `${isDorado ? "#F3B230" : "#8039FF"}`,
+          border: "2px solid #ffffff85",
         }}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="#F5D89D"
-          class="bi bi-star-fill"
-          viewBox="0 0 16 16"
-        >
-          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-        </svg>
+        {icon}
       </span>
       <h4
         className={`text-lg ${
@@ -52,8 +40,23 @@ export default function CardOneSection({
         {description}
       </p>
       {isDorado && (
-        <Link href={"#"} className="mt-10 text-sm text-[#705200]  font-bold">
+        <Link
+          href={"#"}
+          className="mt-10 flex items-center gap-1 text-sm text-[#705200]  font-bold"
+        >
           Learn More
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              fill="#705200"
+              class="bi bi-play-fill"
+              viewBox="0 0 16 16"
+            >
+              <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+            </svg>
+          </span>
         </Link>
       )}
     </div>

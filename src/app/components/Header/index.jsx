@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import ButtonStyled from "../LinkStyled";
 
 const navLinks = [
   {
@@ -22,11 +23,10 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="w-full h-[70px] flex justify-between items-center">
+    <header className="w-full h-[95px] flex justify-between items-center">
       <div></div>
-
       <nav>
-        <ul className="flex gap-8 text-white text-sm font-medium">
+        <ul className="flex gap-8 text-white text-[15px] font-semibold">
           {navLinks.map(({ href, label }, inx) => (
             <li key={inx}>
               <Link href={href}>{label}</Link>
@@ -34,13 +34,7 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-
-      <Link
-        href={"#"}
-        className="bg-[#F0CB5B] text-slate-700 font-semibold text-sm px-5 py-2 rounded-3xl"
-      >
-        Let`s Talk
-      </Link>
+      <ButtonStyled label={"Let`s Talk"} />
     </header>
   );
 }

@@ -3,6 +3,10 @@ import Hero from "./components/Hero";
 import Header from "./components/Header";
 import SecondSection from "./components/SecondSection";
 import ContentBrands from "./components/ContentBrands";
+import SectionThree from "./components/SectionThree";
+import Footer from "./components/Footer";
+import SectionFive from "./components/SectionFive";
+import SectionFour from "./components/SectionFour";
 
 export default function Home() {
   return (
@@ -20,6 +24,10 @@ export default function Home() {
       <ContentBrands />
       <SectionTwo />
       <SecondSection />
+      <SectionThree />
+      <SectionFour />
+      <SectionFive />
+      <Footer />
     </main>
   );
 }
