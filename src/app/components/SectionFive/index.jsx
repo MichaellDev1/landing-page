@@ -12,7 +12,7 @@ export default function SectionFive() {
         <div className="flex-1 flex flex-col">
           <Titles title={"Testimonials Abount Us"} icon={<RiDoubleQuotesL />} />
 
-          <p className="text-[14px] pl-6 max-w-[370px] mt-3 font-semibold text-[#8374aa]">
+          <p className="text-[14px] max-w-[370px] mt-3 font-semibold text-[#8374aa]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magng elit.
             Magni, corrupti!g elit. Magn
           </p>

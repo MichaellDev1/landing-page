@@ -1,5 +1,5 @@
 import React from "react";
-import { StartIcon } from "../Icons";
+import { AiFillStar } from "react-icons/ai";
 import ButtonStyled from "../LinkStyled";
 
 export default function SectionThree() {
@@ -11,13 +11,13 @@ export default function SectionThree() {
       >
         <div className="bg-[#8A51F5] w-full flex items-center justify-center flex-col h-full rounded-[50px]">
           <span
-            className="relative flex items-center justify-center mb-5 w-[50px] h-[50px] rounded-xl"
+            className="relative flex items-center text-[#FBBF24] text-3xl justify-center mb-5 w-[50px] h-[50px] rounded-xl"
             style={{
               background: `#8039FF`,
               border: "2px solid #ffffff85",
             }}
           >
-            <StartIcon />
+            <AiFillStar />
           </span>
 
           <h4 className="text-white font-bold text-2xl">
@@ -29,7 +29,7 @@ export default function SectionThree() {
             debitis totam obcaecati fugiat!
           </p>
           <div className="mt-7">
-          <ButtonStyled label={'Get Started'}/>
+            <ButtonStyled label={"Get Started"} />
           </div>
         </div>
       </div>

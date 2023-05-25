@@ -1,9 +1,9 @@
 import React from "react";
 export default function Titles({ title, icon }) {
   return (
-    <div className="flex items-center gap-2 ml-5">
+    <div className="flex items-center gap-2 ">
       <span
-        className="relative flex items-center justify-center text-white text-4xl mr-2 w-[55px] h-[55px] rounded-xl"
+        className="relative flex items-center justify-center text-white text-4xl w-[55px] h-[55px] rounded-xl"
         style={{
           background: "linear-gradient(#A779E5,#9865f5)",
           border: "2px solid #ffffff85",

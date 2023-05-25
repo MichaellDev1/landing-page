@@ -1,11 +1,15 @@
 import React from "react";
 import Titles from "../Titles";
 import { HiOutlineClipboardList } from "react-icons/hi";
+import { BiTimeFive } from "react-icons/bi";
+import CardSectionFour from "../CardSectionFour";
+import ButtonStyled from "../LinkStyled";
+import CardImageFour from "../CardImageFour";
 
 export default function SectionFour() {
   return (
     <section className="px-[120px] min-h-[600px] w-full flex flex-col justify-center mt-16">
-      <div className="flex w-full">
+      <div className="flex w-full gap-10">
         <div className="flex-1 flex flex-col">
           <Titles
             title={"Try Our Healthy Menu"}
@@ -16,24 +20,72 @@ export default function SectionFour() {
             our best nutritionists for you
           </p>
 
-          <ul className="w-full overflow-y-scroll min-h-[300px] flex-col flex gap-3 mt-10  justify-start items-start">
+          <ul className="w-full overflow-y-scroll min-h-[300px] max-h-[400px] flex-col flex gap-3 mt-10  justify-start">
             <li>
-              <div className="flex items-center bg-[#F9F1FE] gap-4 py-5 rounded-2xl px-5">
-                <span
-                  className="relative flex items-center justify-center text-white text-4xl mr-2 w-[55px] h-[55px] rounded-xl"
-                  style={{
-                    background: "linear-gradient(#A779E5,#9865f5)",
-                    border: "2px solid #ffffff85",
-                  }}
-                ></span>
-
-                <span className="text-[#6E5895] font-bold text-xl">Breakfast Recipes</span>
-              </div>
+              <CardSectionFour
+                title={"Breakfast Recipes"}
+                icon={<BiTimeFive />}
+              />
+            </li>
+            <li>
+              <CardSectionFour
+                title={"Low-Colorie Recipes"}
+                isGold
+                icon={<BiTimeFive />}
+              />
+            </li>
+            <li>
+              <CardSectionFour
+                title={"Holiday Recipes"}
+                icon={<BiTimeFive />}
+              />
+            </li>
+            <li>
+              <CardSectionFour
+                title={"Restriction Recipes"}
+                icon={<BiTimeFive />}
+              />
+            </li>
+            <li>
+              <CardSectionFour
+                title={"Breakfast Recipes"}
+                icon={<BiTimeFive />}
+              />
+            </li>
+            <li>
+              <CardSectionFour
+                title={"Low-Colorie Recipes"}
+                isGold
+                icon={<BiTimeFive />}
+              />
+            </li>
+            <li>
+              <CardSectionFour
+                title={"Holiday Recipes"}
+                icon={<BiTimeFive />}
+              />
+            </li>
+            <li>
+              <CardSectionFour
+                title={"Restriction Recipes"}
+                icon={<BiTimeFive />}
+              />
             </li>
           </ul>
         </div>
 
-        <div className="flex-1"></div>
+        <div className="flex-1 flex justify-center items-end gap-8">
+          <CardImageFour
+            description={"Red Onions With Chopped Cabbage"}
+            isGold={true}
+            labelButton={"Try now"}
+          />
+          <CardImageFour
+            description={"Low Fat Apple Cake With White Cream"}
+            isGold={false}
+            labelButton={"Try now"}
+          />
+        </div>
       </div>
     </section>
   );

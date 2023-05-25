@@ -14,7 +14,7 @@ export default function SecondSection() {
       <div className="flex-1 relative">
         <div className="w-full">
           <Titles title={"Our Value To Help You"} icon={<RiVipDiamondLine />} />
-          <p className="text-[13px] pl-6 max-w-[370px] mt-3 font-semibold text-[#8374aa]">
+          <p className="text-[13px] max-w-[370px] mt-3 font-semibold text-[#8374aa]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
             corrupti!
           </p>
